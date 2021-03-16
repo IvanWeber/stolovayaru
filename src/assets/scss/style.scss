@@ -1,0 +1,30 @@
+@import 'vars';
+@import 'vendor/reset';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: myriad-pro, sans-serif ,system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Blocks */
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/container';

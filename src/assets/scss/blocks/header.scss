@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+
+  min-height: $header-height;
+
+  background-color: $header-background;
+}
+
+.header__menu {
+  width: $header-menu-width;
+
+  margin: auto;
+}
+
+.header__menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu a {
+  color: #ffffff;
+}
+
+.header__separator {
+  height: 28px;
+  width: 1px;
+  background-color: #40bf79;
+}
+
+.toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .toggle {
+    display: block;
+  }
+
+  .header__menu li {
+    visibility: hidden;
+  }
+}
+
+
+
