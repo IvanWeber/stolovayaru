@@ -1,0 +1,18 @@
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: $header-menu-width;
+  min-height: $header-height-desktop;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1200px) { 
+  .desktop-menu {
+    display: none;
+  }
+}

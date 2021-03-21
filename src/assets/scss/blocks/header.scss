@@ -10,8 +10,6 @@
   align-items: center;
   justify-content: center;
 
-  // background-color: $header-background;
-
   h1 {
     display: flex;
     flex-direction: column;
@@ -54,23 +52,10 @@
 
     background-color: $general-menu-background;
   }
-
-  &__desktop-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: $header-menu-width;
-    min-height: $header-height-desktop;
-
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 10px;
-  }
+  
 
   &__general-menu {
     display: flex;
-    // justify-content: space-between;
     align-items: center;
     align-self: stretch;
 
@@ -104,8 +89,6 @@
   &__mobile-search-icon-button-container {
     display: none;
     z-index: 1;
-    // margin-left: auto;
-    // margin-right: 40px;
   }
 
   &__mobile-search {
@@ -181,7 +164,6 @@
 @media screen and (max-width: 1200px) {
   .header {
     min-height: $header-height-mobile;
-    // width: 750px;
     padding: 0;
 
     background: #ffffff;
@@ -206,37 +188,6 @@
 
     a {
       color: black;
-    }
-
-    &__menu {
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-    }
-
-    &__desktop-menu {
-      display: none;
-    }
-
-    &__mobile-menu {
-      display: none;
-
-      opacity: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-
-      height: 0;
-      width: 100%;
-
-      -webkit-transition: all 0.7s linear;
-      -moz-transition: all 0.7s linear;
-      transition: all 0.7s linear;
-    }
-
-    &__mobile-menu li {
-      opacity: 1;
     }
 
     &__general-menu {
@@ -273,14 +224,6 @@
       margin-left: auto;
       margin-right: 40px;
     }
-
-    // &__mobile-search {
-    //   display: block;
-    // }
-
-    // &__mobile-search-form {
-    //   display: block;
-    // }
 
     &__telephone {
       display: block;
@@ -364,7 +307,6 @@
 
     &__knife-fork-img {
       display: block;
-      // margin-left: 15px;
       margin-right: 15px;
       width: 40px;
     }

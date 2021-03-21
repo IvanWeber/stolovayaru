@@ -1,0 +1,24 @@
+.mobile-menu {
+
+}
+
+@media screen and (max-width: 1200px) { 
+  .mobile-menu {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 0;
+    width: 100%;
+
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    transition: all 0.7s linear;
+
+    li {
+      opacity: 1;
+    }
+  }
+}
