@@ -1,0 +1,51 @@
+@media screen and (max-width: 1200px) {
+  .mobile-search {
+    display: flex !important;
+
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #bebebe;
+
+    border-radius: 6px;
+    overflow: hidden;
+    
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    transition: all 0.7s linear;
+
+    label {
+      display: none;
+    }
+    select {
+      color: #777777;
+      
+      background-color: #f1f1f1;
+
+      flex-grow: 0.1;
+
+      border: none;
+    }
+    &__text-input {
+      flex-grow: 15;
+
+      border: none;
+      min-width: 50px;
+    }
+    &__submit-input {
+      background-color: $orange;
+
+      flex-grow: 1;
+
+      min-width: 49px;
+      border: none;
+    }
+  }
+}
+
+// @media screen and (max-width: 631px) { 
+//   .mobile-search {
+//     &__text-input {
+//       flex-grow: 1;
+//     }
+//   }
+// }

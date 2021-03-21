@@ -1,6 +1,6 @@
 console.log('file3');
 
-const mobileSearchForm = document.querySelector('.mobile-search-form')
+const mobileSearchForm = document.querySelector('.mobile-search')
 const mobileSearchButton = document. querySelector('.header__mobile-search-icon-button')
 
 const mobileSearchFormClickHandler = (event) => {

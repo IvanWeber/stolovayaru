@@ -1,5 +1,4 @@
 <header class="header">
-  <div class="header__menu">
     <div class="header__desktop-menu-container">
       <ul class="header__desktop-menu">
         <li><a class="menu-list" href="#">Компания</a></li>
@@ -45,16 +44,8 @@
         <a href="#" class="header__mobile-search-icon-button-container"
           ><img src="./assets/images/search.png" alt="search-icon" class="header__mobile-search-icon-button"
         /></a>
-  
-        <form action="" class="header__desktop-search-form desktop-search-form">
-          <label for="desktop-search-field" class="header__desktop-search-form-label visually-hidden">Поиск</label>
-          <select>
-            <option>Все</option>
-            <option>Пункт 2</option>
-          </select>
-          <input type="search" name="search" id="desktop-search-field" class="header__search-form-input" placeholder="Поиск:">
-          <input type="submit" value="Искать">
-        </form>
+
+        {{> desktop-search }}
   
         <a href="#" class="header__telephone"
           ><img src="./assets/images/telephone.png" alt="search-icon"
@@ -81,11 +72,8 @@
     
     <div class="header__icons-bottom-border"></div>
 
-    <form action="" class="header__mobile-search-form mobile-search-form hidden-completely">
-      <label for="mobile-search-field" class="header__mobile-search-form-label visually-hidden">Поиск</label>
-      <input type="search" name="search" id="mobile-search-field" class="header__search-form-input" placeholder="Поиск:">
-      <input type="submit" value="Искать">
-    </form>
+    {{> mobile-search }}
+
 
     <input type="checkbox" id="checkbox-menu" class="header__menu-checkbox" />
     <ul class="header__mobile-menu">
@@ -107,5 +95,4 @@
         <a href="#"><img src="./assets/images/phone.png" />8 495 790-72-05</a>
       </li>
     </ul>
-  </div>
 </header>
