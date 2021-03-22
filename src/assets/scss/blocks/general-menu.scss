@@ -37,11 +37,59 @@
     display: flex;
     flex-direction: row;
   }
+
+  &__mobile-search-icon-button-container {
+    display: none;
+    z-index: 1;
+  }
+
+  &__telephone {
+    display: none;
+
+    z-index: 1;
+  }
+
+  &__company-on-supplier-portal {
+    display: flex;
+
+    max-width: 143px;
+    margin-left: 3.2%;
+  }
+
+  &__supplier-link-text {
+    color: #777777;
+  }
+
+  &__shopping-cart {
+    display: flex;
+
+    margin-left: 1.9%;
+
+    .shopping-cart {
+      &__goods-number {
+        color: #ff8c00;
+      }
+
+      &__desktop-img {
+        display: block;
+      }
+      &__mobile-img {
+        display: none;
+      }
+
+      &__sum-section {
+        color: #171717;
+
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .general-menu {
-    
+
     h1 {
       display: flex;
       flex-direction: column;
@@ -78,11 +126,46 @@
       width: 50px;
       margin-left: 31px;
     }
+
+    &__mobile-search-icon-button-container {
+      display: block;
+      margin-left: auto;
+      margin-right: 40px;
+    }
+
+    &__telephone {
+      display: block;
+      margin-right: 30px;
+    }
+
+    &__company-on-supplier-portal {
+      display: none;
+    }
+
+    &__shopping-cart {
+      display: block;
+      margin-right: 30px;
+
+      .shopping-cart {
+        &__desktop-img {
+          display: none;
+        }
+        &__mobile-img {
+          display: block;
+        }
+
+        &__sum-section {
+          display: none;
+        }
+      }
+    }
+
   }
 }
 
 @media screen and (max-width: 631px) {
   .general-menu {
+    
     &__mobile-menu-toggle {
       width: 30px;
       margin-left: 15px;
@@ -103,5 +186,30 @@
       margin-left: 15px;
       width: 40px;
     }
+
+    &__mobile-search-icon-button-container {
+      margin-right: 20px;
+    }
+
+    &__mobile-search-icon-button {
+      width: 30px;
+    }
+
+    &__telephone {
+      margin-right: 15px;
+    }
+
+    &__telephone img {
+      width: 30px;
+    }
+
+    &__shopping-cart {
+      margin-right: 15px;
+    }
+
+    &__shopping-cart img {
+      width: 30px;
+    }
+
   }
 }

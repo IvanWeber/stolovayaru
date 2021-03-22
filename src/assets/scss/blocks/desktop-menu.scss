@@ -9,10 +9,22 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
+
+
+  &__separator {
+    height: 28px;
+    width: 1px;
+    background-color: #40bf79;
+  }
 }
 
 @media screen and (max-width: 1200px) { 
   .desktop-menu {
     display: none;
+
+  
+    &__separator {
+      display: none;
+    }
   }
 }

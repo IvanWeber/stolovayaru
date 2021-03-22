@@ -23,6 +23,12 @@ a {
   color: inherit;
 }
 
+.hidden-completely {
+  display: none !important;
+
+  width: 0;
+}
+
 /* Blocks */
 @import 'blocks/page';
 @import 'blocks/header';
