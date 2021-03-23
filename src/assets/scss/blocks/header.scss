@@ -110,13 +110,13 @@
     }
 
     &__menu-checkbox:checked + &__mobile-menu {
-      font-size: 2.5rem;
+      font-size: 2rem;
 
       display: flex;
       justify-content: space-around;
 
       // opacity: 1;
-      height: 400px;
+      height: 350px;
       width: 100%;
       padding-top: 10px;
       padding-bottom: 10px;

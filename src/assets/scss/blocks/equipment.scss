@@ -43,7 +43,7 @@
     }
 
     ul {
-      font-size: 2.5rem;
+      font-size: 2rem;
 
       display: flex;
       flex-direction: column;
@@ -62,13 +62,13 @@
     }
 
     input:checked + ul {
-      font-size: 2.5rem;
+      font-size: 2rem;
 
       display: flex;
       flex-direction: column;
       align-items: center;
       
-      height: 400px;
+      height: 350px;
       border-bottom: 1px solid #ececec;
 
       -webkit-transition: all 0.7s linear;
@@ -81,9 +81,18 @@
       margin-left: 38px;
     }
   
-    &__span-arrow {
+    &__arrow-right {
       margin-top: 27px;
       margin-right: 38px;
+    }
+
+    &__arrow-down {
+      margin-top: 27px;
+      margin-right: 38px;
+    }
+
+    input:checked + &__span-arrow-right {
+      display: none;
     }
 
   }

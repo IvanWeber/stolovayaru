@@ -1,9 +1,9 @@
-console.log('file3');
+console.log('mobile-search.js enable');
 
 const mobileSearchForm = document.querySelector('.mobile-search')
 const mobileSearchButton = document. querySelector('.general-menu__mobile-search-icon-button')
 
-const mobileSearchFormClickHandler = (event) => {
+const mobileSearchFormClickHandler = () => {
 
   if (mobileSearchForm.classList.contains('hidden-completely')) {
     mobileSearchForm.classList.remove('hidden-completely')
