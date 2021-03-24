@@ -56,7 +56,6 @@
 
 @media screen and (max-width: 1200px) {
   .header {
-    min-height: $header-height-mobile;
     padding: 0;
 
     background: #ffffff;
@@ -71,17 +70,16 @@
     }
 
 
-    &__general-menu {
+    &__general-menu-container {
       display: flex;
       align-items: center;
       align-self: stretch;
 
+      
       // min-height: $header-height-mobile;
-      height: 100%;
+      border-bottom: 1px solid #e5e5e5;
 
       background-color: $general-menu-background;
-
-      border-bottom: 1px solid #e5e5e5;
     }
 
 
