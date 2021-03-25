@@ -11,7 +11,7 @@
   &__content {
     flex-grow: 10;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    max-width: 420px;
+    max-width: 500px;
 
     h2 {
       font-size: 1.6rem;
@@ -31,6 +31,10 @@
     h3 {
       font-size: 4.2rem;
       color: #f3f1f1;
+
+      span {
+        display: block;
+      }
     }
 
     p {
@@ -42,6 +46,10 @@
       font-size: 1.8rem;
       color: #ffffff;
       background-color: #ffaf2d;
+
+      align-self: flex-start;
+      padding: 5px 15px;
+      border-radius: 25px;
     }
   }
 
