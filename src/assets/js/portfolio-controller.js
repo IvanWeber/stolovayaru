@@ -8,7 +8,7 @@ const contentItemsArray = portfolio.querySelectorAll('.portfolio__content')
 const radioButtonsArray = portfolioController.querySelectorAll('input')
 
 
-
+//changes content on click radiobutton
 const radioButtonChangeHandler = () => {
   contentItemsArray.forEach((contentItem) => {
     contentItem.classList.add('hidden-completely')
@@ -29,7 +29,7 @@ radioButtonsArray.forEach((radioButton) => {
 //===========================================================
 
 
-
+//changes content in order(from first to last element) for a given time interval
 const changeContentPerTime = () => {
   for (let i = 0; i < radioButtonsArray.length; i++) {
     if (radioButtonsArray[i].checked && i + 1 !== radioButtonsArray.length) {
