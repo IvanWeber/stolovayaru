@@ -50,4 +50,33 @@
       margin-bottom: 30px;
     }
   }
+
+  &__brands {
+    ul {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 98%;
+      margin-top: 25px;
+      margin-right: auto;
+      margin-left: auto;
+      height: 105px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .products {
+    &__row {
+      flex-direction: column;
+
+    }
+
+    &__sale {
+      min-height: 480px;
+      width: 95%;
+      margin: 2.5%;
+    }
+  }
 }
