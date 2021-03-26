@@ -2,11 +2,12 @@
   
   background-color: #232323;
 
-  flex-grow: 2;
+  // flex-grow: 2;
   display: flex;
   flex-direction: column;
 
-  min-height: 475px;
+  max-height: 475px;
+  width: 57%;
 
   &__content {
     flex-grow: 10;
@@ -29,7 +30,7 @@
     }
 
     h3 {
-      font-size: 4.2rem;
+      font-size: 3.2rem;
       color: #f3f1f1;
 
       span {

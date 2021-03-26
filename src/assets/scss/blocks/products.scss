@@ -13,36 +13,19 @@
 
   &__row {
     display: flex;
+    justify-content: space-between;
     margin-top: 21px;
   }
 
   &__targeted-offers {
-    background-color: #ffffff;
-
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    min-height: 475px;
-
-    h2 {
-      font-size: 2.4rem;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
-
-  .portfolio {
   }
 
   &__sale {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
-    flex-grow: 1;
-    min-height: 475px;
+    max-height: 475px;
+    width: 20%;
+    // max-width: 300px;
   }
 }
