@@ -78,5 +78,17 @@
       width: 95%;
       margin: 2.5%;
     }
+
+    &__brands {
+      ul {
+        flex-wrap: wrap;
+        height: auto;
+
+        li {
+          min-width: 150px;
+          padding: 10px;
+        }
+      }
+    }
   }
 }
