@@ -2,12 +2,12 @@
   
   background-color: #232323;
 
-  // flex-grow: 2;
   display: flex;
   flex-direction: column;
 
   max-height: 475px;
   width: 57%;
+  // min-width: 698px;
 
   &__content {
     flex-grow: 10;
@@ -49,7 +49,9 @@
       background-color: #ffaf2d;
 
       align-self: flex-start;
-      padding: 5px 15px;
+      
+      padding: 7px 17px;
+      border: none;
       border-radius: 25px;
     }
   }
