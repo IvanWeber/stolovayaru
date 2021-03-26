@@ -1,4 +1,4 @@
-console.log('menu-arrow-changer-1.js enable');
+console.log('menu-arrow-changer.js enable');
 
 const labelButtons = document.querySelectorAll('.menu-label')
 const rightArrows = document.querySelectorAll('.menu-label__arrow-right')
