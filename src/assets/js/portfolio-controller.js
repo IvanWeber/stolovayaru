@@ -30,6 +30,7 @@ radioButtonsArray.forEach((radioButton) => {
 
 
 //changes content in order(from first to last element) for a given time interval
+
 // const changeContentPerTime = () => {
 //   for (let i = 0; i < radioButtonsArray.length; i++) {
 //     if (radioButtonsArray[i].checked && i + 1 !== radioButtonsArray.length) {
