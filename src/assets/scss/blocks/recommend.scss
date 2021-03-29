@@ -129,3 +129,43 @@
 
   }
 }
+
+@media screen and (max-width: 440px) { 
+  .recommend {
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    &__content-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    &__column-1 {
+      width: 100%;
+    }
+
+    &__column-2 {
+      width: 100%;
+    }
+
+    &__heating-equipment {
+      flex-direction: column;
+    }
+
+    &__refrigerated-tables {
+      flex-direction: column;
+    }
+
+  }
+}
