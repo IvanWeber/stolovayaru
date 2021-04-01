@@ -1,6 +1,7 @@
 .manufacturers-news {
   background-color: #e8e7e7;
   display: flex;
+  padding-top: 160px;
   // flex-direction: column;
 
   h2 {
@@ -11,7 +12,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
 
     width: 1560px;
     margin: 0 auto 0 auto;
@@ -20,27 +21,39 @@
 
   .container {
     &__header-row {
-      width: 88%;
-      margin: 0 auto;
+      // width: 88%;
+      // margin: 0 auto;
+
+      h2 {
+        margin-left: 4.7%;
+      }
     }
 
     &__content-row { 
       display: flex;
-      justify-content: space-evenly;
+      // justify-content: space-evenly;
     }
   }
 
   &__main-news {
+    margin-left: 4.9%;
+    margin-top: 3.4%;
+    // margin-top: 15vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
 
     min-height: 775px;
     // max-width: 500px;
-    width: 30%;
+    width: 31%;
 
     h3 {
       font-size: 2.4rem;
+      margin-top: 4%;
+    }
+
+    p:first-of-type{
+      margin-top: 5%
     }
 
     p {
@@ -52,7 +65,8 @@
 
       align-self: start;
 
-      padding: 5px 30px;
+      padding: 6px 35px;
+      margin-top: 14%;
       border: 2px solid #282828;
       border-radius: 15px;
     }
@@ -61,6 +75,7 @@
   .author-date-row {
     display: flex;
     justify-content: space-between;
+    margin-top: 5.5%;
 
     &__author {
       font-size: 1.6rem;
@@ -69,18 +84,21 @@
     &__date {
       font-size: 1.6rem;
       color: #777777;
+      margin-right: 9%;
     }
   }
 
   &__other-news {
     max-width: 810px;
     width: 60%;
+    margin-left: 4.7%;
 
     ul {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      margin-top: 6.5%;
+      margin-left: 4.2%;
     }
 
     li {
