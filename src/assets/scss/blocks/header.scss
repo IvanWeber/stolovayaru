@@ -9,7 +9,7 @@
     height: 100%;
     width: 100%;
 
-    background-color: $desktop-menu-background;
+    background-color: $desktop-menu-bg-color;
 
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +30,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-color: $general-menu-background;
+    background-color: $general-menu-bg-color;
   }
 
 
@@ -75,11 +75,9 @@
       align-items: center;
       align-self: stretch;
 
-      
-      // min-height: $header-height-mobile;
       border-bottom: 1px solid #e5e5e5;
 
-      background-color: $general-menu-background;
+      background-color: $general-menu-bg-color;
     }
 
 
