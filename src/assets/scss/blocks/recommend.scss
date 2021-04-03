@@ -60,8 +60,29 @@
 
    p {
      font-size: 1.6rem;
+     text-align: center;
+     max-width: 46%;
+     margin-top: 5%;
+   }
+
+   img {
+     margin-top: auto;
    }
  }
+
+  &__combi-steamers-text-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__combi-steamers-text-mobile {
+    display: none;
+  }
+
+  &__combi-steamers-img-mobile {
+    display: none;
+  }
 
  &__column-2 {
    display: flex;
@@ -84,15 +105,25 @@
    }
 
    span {
-     font-size: 2rem;
+     font-size: 2rem;   
+     text-transform: uppercase;
+     margin-top: 19%;
+     margin-left: 12%;
    }
 
    h3 {
-     font-size: 3rem;
+    font-size: 3rem;
+    margin-top: 2%;
+    margin-left: 12%;
+    max-width: 40%;
    }
 
    p {
-     font-size: 1.6rem;
+    font-size: 1.6rem;
+    color: #777777;
+    max-width: 80%;
+    margin-top: 5%;
+    margin-left: 12%;
    }
  }
 
@@ -102,18 +133,27 @@
 
    span {
      font-size: 2rem;
+     text-transform: uppercase;
+     margin-top: 15%;
+     margin-left: 16%;
    }
 
    h3 {
-     font-size: 3rem;
+     font-size: 3rem;  
+     margin-top: 1%;  
+     margin-left: 16%;
    }
 
    p {
      font-size: 1.6rem;
+     margin-top: 5%;
+     margin-left: 16%;
    }
 
-   button {
-     font-size: 1.6rem;
+   a {
+    font-size: 1.6rem;
+    margin-top: 6%;
+    margin-left: 16%;
    }
  }
 
@@ -143,13 +183,62 @@
 
     &__column-1 {
       width: 100%;
+      min-height: 480px;
+
+      .recommend__combi-steamers-img-desktop {
+        display: none;
+      }
     }
+
+      &__combi-steamers {
+        flex-direction: row;
+      }
+
+        &__combi-steamers-img-mobile {
+          display: block;
+        }
+
+        &__combi-steamers-text-desktop {
+          display: none;
+        }
+
+        &__combi-steamers-text-mobile {
+          align-self: stretch;
+          display: flex;
+          flex-direction: column;
+          margin-left: 12%;
+
+          span {
+            font-size: 3rem;
+            margin-top: 160px;
+          }
+
+          h3 {
+            font-size: 4rem;
+            margin-top: 20px;
+          }
+
+          p {
+            font-size: 2.5rem;
+            text-align: left;
+          }
+        }
 
     &__column-2 {
       width: 100%;
     }
 
   }
+}
+
+@media screen and (max-width: 740px) { 
+
+  .recommend {
+    &__combi-steamers {
+      flex-direction: column;
+    }
+  }
+
 }
 
 @media screen and (max-width: 440px) { 
@@ -175,6 +264,19 @@
 
     &__column-1 {
       width: 100%;
+      margin-bottom: 25px;
+
+      span {
+        margin-top: 25px;
+      }
+
+      .recommend__combi-steamers-img-desktop {
+        display: block;
+      }
+
+      .recommend__combi-steamers-img-mobile {
+        display: none;
+      }
     }
 
     &__column-2 {
@@ -183,10 +285,19 @@
 
     &__heating-equipment {
       flex-direction: column;
+      margin-bottom: 25px;
+
+      img {
+        align-self: flex-start;
+      }
     }
 
     &__refrigerated-tables {
       flex-direction: column;
+
+      img {
+        align-self: flex-end;
+      }
     }
 
   }

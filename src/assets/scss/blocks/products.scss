@@ -118,16 +118,53 @@
         flex-wrap: wrap;
         height: auto;
 
-        li {
-          min-width: 150px;
-          padding: 5px;
-        }
+      li {
+        min-width: 355px;
+        min-height: 155px;
+        padding: 50px;
+        border: 1px solid #f3f2f2;
+      }        
+
+      li img {
+        width: 250px;
+      }
       }
     }
   }
 }
 
 @media screen and (max-width: 575px) {
+  .products {
+    &__brands {
+      ul {
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+
+        li {
+          // max-width: 150px;
+          // min-height: 155px;
+          min-width: auto;
+          width: 100%;
+          padding: 5px;
+          border: 1px solid #f3f2f2;
+          display: flex;
+      
+        }
+        
+        li a {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        li img {
+          max-width: 150px;
+          width: auto;
+        }
+      }
+    }
+  }
+
   .portfolio {
     width: 100%;
     padding: 0 0 15px 0;
