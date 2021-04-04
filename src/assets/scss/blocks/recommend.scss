@@ -237,6 +237,17 @@
     &__combi-steamers {
       flex-direction: column;
     }
+
+    &__column-1 {
+
+      .recommend__combi-steamers-img-desktop {
+        display: block;
+      }
+
+      .recommend__combi-steamers-img-mobile {
+        display: none;
+      }
+    }
   }
 
 }
@@ -253,7 +264,7 @@
     }
 
     img {
-      width: 200px;
+      max-width: 200px;
     }
 
     &__content-row {
@@ -270,13 +281,13 @@
         margin-top: 25px;
       }
 
-      .recommend__combi-steamers-img-desktop {
-        display: block;
-      }
+      // .recommend__combi-steamers-img-desktop {
+      //   display: block;
+      // }
 
-      .recommend__combi-steamers-img-mobile {
-        display: none;
-      }
+      // .recommend__combi-steamers-img-mobile {
+      //   display: none;
+      // }
     }
 
     &__column-2 {

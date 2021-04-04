@@ -1,0 +1,16 @@
+.description {
+  &__description-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) { 
+  .description {
+    &__description-desktop {
+      display: none;
+    }
+    &__description-mobile {
+      display: block;
+    }
+  }
+}
