@@ -1,4 +1,12 @@
 .description {
+  display: flex;
+  background-color: $content-bg-color;
+
+  &__container {
+    width: 1560px;
+    margin: 0 auto;
+ }
+
   &__description-mobile {
     display: none;
   }
