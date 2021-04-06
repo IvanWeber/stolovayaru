@@ -1,0 +1,54 @@
+.description-mobile {
+  padding: 20px;
+
+  span {
+    display: block;
+  }
+
+  span:first-of-type {
+    font-size: 4rem;
+    margin-top: 29px;
+  }
+
+  span:nth-of-type(2) {
+    font-size: 2.4rem;
+    margin-top: 35px;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+
+  &__indicators-list {
+    display: block;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  ul li {
+    font-size: 1.8rem;
+  }
+
+  label {
+    margin-left: 80px;
+  }
+
+  &__list {
+    display: none;
+    margin-top: 15px;
+    margin-left: 80px;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + &__list {
+    display: block;
+  }
+}
