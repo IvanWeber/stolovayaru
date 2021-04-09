@@ -1,3 +1,135 @@
 .basement {
-  
+
+  &__wrapper-1 {
+    background-color: #232323;
+    display: flex;
+  }
+
+  &__wrapper-2 {
+    background-color: #191919;
+    display: flex;
+  }
+
+  &__container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px 0 35px;
+    width: $container-width;
+    min-height: 480px;
+    margin: 0 auto 0 auto; 
+  }
+
+  &__container-2 {
+    display: flex;
+    justify-content: space-between;
+    width: $container-width;
+    min-height: 120px;
+    margin: 0 auto 0 auto; 
+    padding: 20px;
+  }
+
+  &__column-1, &__column-2, &__column-3, &__column-4 {
+    h2 {
+      color: #777777;
+      font-size: 2.4rem;
+      margin-top: 100px;
+    }
+
+    ul {
+    }
+
+    ul li {
+      color: #ffffff;
+      font-size: 1.6rem;
+      margin-top: 10px;
+    }
+  }
+
+  &__logo {
+    h1 {
+      font-size: 2.4rem;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: #787878;
+    }
+  }
+
+  &__site-developer {
+    p {
+      font-size: 1.8em;
+      color: #ffffff;
+    }
+  }
+
+  &__list-heading-mobile {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
 }
+
+@media screen and (max-width: 1200px) { 
+  .basement {
+    
+
+    &__container-1 {
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__list-heading {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu-label__arrow-right {
+      color: #fff;
+      justify-self: flex-end;
+      margin-right: 10%;
+    }
+
+    .menu-label__arrow-down {
+      color: #fff;
+      justify-self: flex-end;
+      margin-right: 10%;
+    }
+
+    &__list-heading-mobile {
+      display: flex;
+
+      h2 {
+        color: #ffffff;
+        margin: 0;
+      }
+    }
+
+    &__list-heading-desktop {
+      display: none;
+    }
+
+    ul {
+      display: none;
+    }
+
+    input:checked + ul {
+      display: block;
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) { 
+  .basement {
+    &__site-developer {
+      font-size: 1rem;
+    }
+  }
+}
+

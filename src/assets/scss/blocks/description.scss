@@ -1,6 +1,7 @@
 .description {
   display: flex;
   background-color: $content-bg-color;
+  padding-bottom: 150px;
 
   &__container {
     width: 1560px;
@@ -14,11 +15,20 @@
 
 @media screen and (max-width: 1200px) { 
   .description {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+
     &__description-desktop {
       display: none;
     }
     &__description-mobile {
       display: block;
+    }
+    &__description-switcher {
+      margin-top: 20px;
+    }
+    .description__menu-mobile {
+      margin-left: 0;
     }
   }
 }
