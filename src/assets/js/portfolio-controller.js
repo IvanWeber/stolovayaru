@@ -31,25 +31,25 @@ radioButtonsArray.forEach((radioButton) => {
 
 // changes content in order(from first to last element) for a given time interval
 
-// const changeContentPerTime = () => {
-//   for (let i = 0; i < radioButtonsArray.length; i++) {
-//     if (radioButtonsArray[i].checked && i + 1 !== radioButtonsArray.length) {
-//       radioButtonsArray[i].checked = false
-//       contentItemsArray[i].classList.add('hidden-completely')
-//       radioButtonsArray[i + 1].checked = true
-//       contentItemsArray[i + 1].classList.remove('hidden-completely')
-//       break
-//     }
-//     if (radioButtonsArray[i].checked && i + 1 === radioButtonsArray.length) {
-//       radioButtonsArray[i].checked = false
-//       contentItemsArray[i].classList.add('hidden-completely')
-//       radioButtonsArray[0].checked = true
-//       contentItemsArray[0].classList.remove('hidden-completely')
-//       break
-//     }
-//   }
-// }
+const changeContentPerTime = () => {
+  for (let i = 0; i < radioButtonsArray.length; i++) {
+    if (radioButtonsArray[i].checked && i + 1 !== radioButtonsArray.length) {
+      radioButtonsArray[i].checked = false
+      contentItemsArray[i].classList.add('hidden-completely')
+      radioButtonsArray[i + 1].checked = true
+      contentItemsArray[i + 1].classList.remove('hidden-completely')
+      break
+    }
+    if (radioButtonsArray[i].checked && i + 1 === radioButtonsArray.length) {
+      radioButtonsArray[i].checked = false
+      contentItemsArray[i].classList.add('hidden-completely')
+      radioButtonsArray[0].checked = true
+      contentItemsArray[0].classList.remove('hidden-completely')
+      break
+    }
+  }
+}
 
-// setInterval(changeContentPerTime, 5000)
+setInterval(changeContentPerTime, 5000)
 
 
